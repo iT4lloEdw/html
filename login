@@ -5,7 +5,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cadastro de Cliente</h1>
+        <h1>LOGIN DO CLIENTE</h1>
         <form>
             <label for="id">ID:</label>
             <input type="text" id="id" name="id"><br>
@@ -24,13 +24,14 @@
     </div>
 
     <div class="container">
-        <h1>Ordem de Serviço</h1>
+        <h1>ORDEM DE SERVIÇO (OS)</h1>
         <form>
             <label for="os_id">ID da Ordem de Serviço:</label>
             <input type="text" id="os_id" name="os_id"><br>
 
             <label for="tipo">Tipo:</label>
             <input type="text" id="tipo" name="tipo"><br>
+            
 
             <label for="aparelho">Nome do Aparelho:</label>
             <input type="text" id="aparelho" name="aparelho"><br>
