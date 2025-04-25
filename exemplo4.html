@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Customizar o circulo</h1>
+    Cor: <input type="color" id="cor" value="#00ccff" >
+    <br>
+    Tamanho: <input type="range" id="tamanho" min="10" max="100" value="50">
+
+    <svg width="300" height="300" style="border: 1px solid black;">
+        <circle id="circulo" cx="150" cy="150" r="50" fill="#00ccff"></circle>
+    </svg>
+
+    <script>
+        const cor = document.getElementById('cor');
+        const tamanho = document.getElementById('tamanho');
+        const circulo = document.getElementById('circulo');
+
+        cor.addEventListener('input', function(){
+            circulo.setAttribute('fill', this.value);
+        })
+
+        tamanho.addEventListener('input', function(){
+            circulo.setAttribute('r', this.value);
+        })
+    </script>
+</body>
+</html>

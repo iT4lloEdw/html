@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinha</title>
+</head>
+<body>
+    <h1>Escolha a cor da bolinha</h1>
+    <input type="color" id="cor" value="ff0000">
+
+    <svg width="200" height="200" >
+        <circle id="circulo" cx="100" cy="100" r="50" fill="#ff0000"> </circle>
+    </svg>
+
+<script>
+        const cor = document.getElementById('cor');
+        const circulo = document.getElementById('circulo');
+
+        cor.addEventListener('input', function() {
+            circulo.setAttribute('fill', this.value);
+        })
+</script>
+</body>
+</html>
